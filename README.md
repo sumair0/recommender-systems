@@ -1,5 +1,3 @@
-# Recommender Systems
-## Group 9
 ## Instructions
 For the interface RUN : 
 1. python main.py 
@@ -11,7 +9,7 @@ Refer to requirements.py
 ## Organization :
 You can find the three algorithms 
 1. Matrix Factorization (mf)
-2. DNN (We have two versions) (under dnn & misc_algo)
+2. DNN (two versions) (under dnn & misc_algo)
 3. Reinforcement Learning for reward prediction (rl)
 
 static, templates directories are to support the flask Interface
