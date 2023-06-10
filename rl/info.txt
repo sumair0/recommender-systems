@@ -1,0 +1,37 @@
+PPO Run 3
+
+WARNING:tensorflow:From /home/local/ASUAD/mverma13/anaconda3/envs/swm_py36/lib/python3.6/site-packages/stable_baselines/common/base_class.py:1169: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 0
+Reco is being reset() --> first step = 0 | Total_correct = 34098
+Reco is being reset() --> first step = 0 | Total_correct = 34127
+Reco is being reset() --> first step = 0 | Total_correct = 34126
+Reco is being reset() --> first step = 0 | Total_correct = 34098
+Reco is being reset() --> first step = 0 | Total_correct = 34091
+Reco is being reset() --> first step = 0 | Total_correct = 34102
+Reco is being reset() --> first step = 0 | Total_correct = 34116
+Reco is being reset() --> first step = 0 | Total_correct = 34108
+WARNING:tensorflow:From /home/local/ASUAD/mverma13/anaconda3/envs/swm_py36/lib/python3.6/site-packages/stable_baselines/common/tf_util.py:502: The name tf.Summary is deprecated. Please use tf.compat.v1.Summary instead.
+
+Finished training in 313 seconds
+Saving PPO model as PPO2_Recommendations
+Starting data download. Saving to /home/local/ASUAD/mverma13/Yochan/swm_rl/rl/recommendation_env/data
+Using cached data located at /home/local/ASUAD/mverma13/Yochan/swm_rl/rl/recommendation_env/data/ml-100k.
+Reco is being reset() --> first step = 0 | Total_correct = 0
+/home/local/ASUAD/mverma13/anaconda3/envs/swm_py36/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: WARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+**************EPISODE #1****************
+Total steps = 99999 | steps/second = 1754.3684210526317
+Total correct predictions = 34165
+Prediction accuracy = 0.34165341653416537
+Reco is being reset() --> first step = 0 | Total_correct = 34165
+Finished training AND evaluation in 371 seconds
+
+Process finished with exit code 0

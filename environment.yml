@@ -1,0 +1,4 @@
+name: swm_python_3_8_env
+channels:
+  - defaults
+prefix: /home/local/ASUAD/mverma13/anaconda3/envs/swm_python_3_8_env

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site_title }}</title>
+
+    <!-- CSS  -->
+    <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='mycss.css') }}">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+<!--&lt;!&ndash;NAVIGATION BAR&ndash;&gt;-->
+<!--<nav class="light-blue lighten-1" role="navigation">-->
+<!--    <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo">{{ site_title }}</a>-->
+<!--        <ul class="right hide-on-med-and-down">-->
+<!--            <li><a href="">Home</a></li>-->
+<!--            <li><a href="">About</a></li>-->
+<!--        </ul>-->
+<!--        <a href="" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
+<!--    </div>-->
+<!--</nav>-->
+
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Group #9 Movie Recommendation System</h1>
+    </div>
+</section>
+
+
+<div class="container">
+    <form action="{{ url_for('get_user_id') }}" method="post">
+        <div class="form-group row">
+            <label class="control-label col-1" for="userid">User ID:</label>
+            <div class="col-sm-10">
+                <input type="text" style="width: 200px" class="form-control" id="userid" placeholder="Enter User ID" name="userid" required>
+            </div>
+        </div>
+
+
+        <div class="container" style="font-size: 20px">
+            <strong>Algorithm : </strong>
+            <br> <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1a" value="a"
+                       checked>
+                <label class="form-check-label" for="q1a">
+                    Matrix Factorization
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                <label class="form-check-label" for="q1b">
+                    Deep Neural Network
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                <label class="form-check-label" for="q1c">
+                    Reinforcement Learning
+                </label>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!--CONTAINER-->
+<div class="container">
+    <br><br>
+    <h1 class="header center orange-text">{{ header }}</h1>
+    <h4 class="center light-blue-text">{{ sub_header }}</h4>
+
+
+    <ol class="collection with-header" type="1">
+        <!--        <h4><b>{{ list_header }}</b></h4>-->
+        {# loop through recomms and render them in list#}
+        {% for recoms in recommendations %}
+        <li>
+            <div class="card-body">
+                <h5 class="card-title">Movie : {{recoms[0]}}</h5>
+                <p class="card-text">Rating : {{recoms[1]}}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+</div>
+
+
+</body>
+</html>
